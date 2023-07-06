@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="33273" started-at="2023-07-04T19:49:12 IST" finished-at="2023-07-04T19:49:45 IST">
+    <groups>
+    </groups>
+    <test name="Test1" duration-ms="33273" started-at="2023-07-04T19:49:12 IST" finished-at="2023-07-04T19:49:45 IST">
+      <class name="TestClasses.LoginTest">
+        <test-method status="PASS" signature="Startsetup()[pri:0, instance:TestClasses.LoginTest@16293aa2]" name="Startsetup" is-config="true" duration-ms="4" started-at="2023-07-04T19:49:12 IST" finished-at="2023-07-04T19:49:12 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Startsetup -->
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:TestClasses.LoginTest@16293aa2]" name="setup" is-config="true" duration-ms="9539" started-at="2023-07-04T19:49:12 IST" finished-at="2023-07-04T19:49:21 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="A_clickonlogin()[pri:0, instance:TestClasses.LoginTest@16293aa2]" name="A_clickonlogin" duration-ms="22239" started-at="2023-07-04T19:49:21 IST" finished-at="2023-07-04T19:49:43 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- A_clickonlogin -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:TestClasses.LoginTest@16293aa2]" name="teardown" is-config="true" duration-ms="824" started-at="2023-07-04T19:49:44 IST" finished-at="2023-07-04T19:49:45 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- TestClasses.LoginTest -->
+    </test> <!-- Test1 -->
+  </suite> <!-- Suite -->
+</testng-results>

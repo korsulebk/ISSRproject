@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="com.Utility.Listener"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="TestClasses.Donatepage_TestCases">
+        <methods>
+          <include name="Startsetup"/>
+          <include name="teardown"/>
+          <include name="setup"/>
+          <include name="A_DonatePage"/>
+        </methods>
+      </class> <!-- TestClasses.Donatepage_TestCases -->
+      <class name="TestClasses.HomePageTestCases">
+        <methods>
+          <include name="clickononhome"/>
+          <include name="Startsetup"/>
+          <include name="teardown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- TestClasses.HomePageTestCases -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
