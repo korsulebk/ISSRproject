@@ -4,7 +4,8 @@
   <listeners>
     <listener class-name="com.Utility.Listener"/>
   </listeners>
-  <test thread-count="5" name="Test(failed)">
+  <test thread-count="5" name="Test1(failed)">
+    <parameter name="BrowserName" value="chrome"/>
     <classes>
       <class name="TestClasses.Donatepage_TestCases">
         <methods>
@@ -14,14 +15,6 @@
           <include name="A_DonatePage"/>
         </methods>
       </class> <!-- TestClasses.Donatepage_TestCases -->
-      <class name="TestClasses.HomePageTestCases">
-        <methods>
-          <include name="clickononhome"/>
-          <include name="Startsetup"/>
-          <include name="teardown"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- TestClasses.HomePageTestCases -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- Test1(failed) -->
 </suite> <!-- Failed suite [Suite] -->

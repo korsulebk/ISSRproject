@@ -2,11 +2,14 @@ package TestClasses;
 
 import java.io.IOException;
 
+import org.testng.ITestResult;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
 import com.POM.Loginpage_POM;
 import com.Utility.BaseClass;
 import com.Utility.ExcelDataProvider;
+import com.Utility.Listener;
 
 public class LoginTest extends BaseClass{
 	@Test
@@ -15,6 +18,7 @@ public class LoginTest extends BaseClass{
 			
 		log.loginbtn();
 		System.out.println("Succefully Clicked on login button");
+		
 		String uname=ExcelDataProvider.getdataproviderExcelsheet(0,1 );  //Data geting from excel sheet
 		log.username(uname);
 		System.out.println("Succefully entered Username into username field");
@@ -61,6 +65,13 @@ public class LoginTest extends BaseClass{
 		Thread.sleep(3000);
 	
 		}
+	
+  @AfterMethod
+  public void ss(ITestResult result) throws IOException {
+	  if(ITestResult.FAILURE==result.getStatus()) {
+			Screenshot.screenshot();
+		}
+  }
 	
 	
 	

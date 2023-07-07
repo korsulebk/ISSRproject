@@ -151,6 +151,7 @@
     &lt;parameter name=&quot;BrowserName&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;TestClasses.LoginTest&quot;/&gt;
+      &lt;class name=&quot;TestClasses.Screenshot&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test1 --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -164,7 +165,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test1 (1 class)</span>
+                <span class="test-name">Test1 (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -194,12 +195,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'A_clickonlogin')
 data.setCell(0, 2, 'TestClasses.LoginTest')
-data.setCell(0, 3, 22239);
+data.setCell(0, 3, 15429);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 22 seconds</span>
+              <span class="suite-total-time">Total running time: 15 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -214,9 +215,16 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">1 ignored method</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">TestClasses.Screenshot</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">Startsetup</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Suite" class="panel">
@@ -232,15 +240,19 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
                 <span class="method-name">setup(chrome)</span>
-                <span class="method-start">30 ms</span>
+                <span class="method-start">43 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">A_clickonlogin</span>
-                <span class="method-start">9572 ms</span>
+                <span class="method-start">4823 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">32453 ms</span>
+                <span class="method-start">20581 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">ss([TestResult name=A_clickonlogin status=SUCCESS method=LoginTest.A_clickonlogin()[pri:0, instance:Tes...)</span>
+                <span class="method-start">20581 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

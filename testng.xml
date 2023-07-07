@@ -8,6 +8,7 @@
   <parameter name="BrowserName" value="chrome"></parameter>
     <classes>
       <class name="TestClasses.LoginTest"/>
+      <class name="TestClasses.Screenshot"/>
     </classes>
   </test> <!-- Test -->        
 </suite> <!-- Suite -->

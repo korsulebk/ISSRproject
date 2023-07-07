@@ -30,14 +30,13 @@ public class Listener extends BaseClass implements ITestListener {
 	public void onTestSuccess(ITestResult result) {
     extenttest.get().log(Status.PASS, "Test case pass")	;
     extenttest.get().addScreenCaptureFromBase64String(getscreenshot());
-    extenttest.get().addScreenCaptureFromPath(getscreenshot());
+    
 	}
 
 	public void onTestFailure(ITestResult result) {
 	    extenttest.get().log(Status.FAIL, "Test case Fail")	;	
 	    extenttest.get().addScreenCaptureFromBase64String(getscreenshot());
-	    extenttest.get().addScreenCaptureFromPath(getscreenshot());
-
+	   
 	}
 
 	public void onTestSkipped(ITestResult result) {
@@ -49,15 +48,11 @@ public class Listener extends BaseClass implements ITestListener {
 	    extent.flush();	
 		}
   public static String getscreenshot() {
+	  Date Currentdate=new Date();
+	  String a=Currentdate.toString().replace(":","");
 	  TakesScreenshot ts=(TakesScreenshot)driver;
 	  return ts.getScreenshotAs(OutputType.BASE64);
   }
   
-  public static void screenshot() throws IOException {
-	  Date Currentdate=new Date();
-	  String a=Currentdate.toString().replace(":","");
-	  File s=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-	  File d=new File(".\\ScreenShot/"+a+".png");
-	  FileUtils.copyFile(s, d);
-  }
+ 
 } 
