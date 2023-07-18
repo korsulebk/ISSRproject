@@ -15,7 +15,7 @@ import com.Utility.BaseClass;
 public class HomePageTestCases extends BaseClass{
 	
 	WebDriverWait wait;
-	@Test
+	@Test(groups= {"regression"})
 	public void clickononhome() throws InterruptedException {
 		
 			HomePage_POM hp=new HomePage_POM(driver);

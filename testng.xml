@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite">
+<suite name="Suite"  >
 <listeners>
 <listener class-name="com.Utility.Listener"></listener>
 </listeners>
+
   <test thread-count="5" name="Test1">
-  <parameter name="BrowserName" value="chrome"></parameter>
+ <parameter name="BrowserName" value="chrome"></parameter>
     <classes>
-      <class name="TestClasses.LoginTest"/>
-      <class name="TestClasses.Screenshot"/>
+      <class name="TestClasses.LoginTest"/>    
     </classes>
-  </test> <!-- Test -->        
+  </test> <!-- Test -->            
 </suite> <!-- Suite -->

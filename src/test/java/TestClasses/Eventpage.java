@@ -44,38 +44,39 @@ Thread.sleep(5000);
 				ele.click();
 				break;
 			}
-		}
-		Thread.sleep(2000);
-		String year1="2022";
-		String month1="June";
-		String date1="21";
-driver.findElement(By.xpath("(//button[@class='MuiButtonBase-root MuiIconButton-root MuiIconButton-edgeEnd MuiIconButton-sizeMedium css-slyssw'])[2]")).click();
-Thread.sleep(4000);
-while(true) {
-	String month1year1=driver.findElement(By.xpath("(//div[@class='MuiPickersFadeTransitionGroup-root css-1bx5ylf'])[1]")).getText();
-	String arr1[]= month1year1.split(" ");
-	String mon1 = arr1[0];
-	String yr1 = arr1[1];
+		}}
+//		Thread.sleep(2000);
+//		String year1="2022";
+//		String month1="June";
+//		String date1="21";
+//driver.findElement(By.xpath("(//button[@class='MuiButtonBase-root MuiIconButton-root MuiIconButton-edgeEnd MuiIconButton-sizeMedium css-slyssw'])[2]")).click();
+//Thread.sleep(4000);
+//while(true) {
+//	String month1year1=driver.findElement(By.xpath("(//div[@class='MuiPickersFadeTransitionGroup-root css-1bx5ylf'])[1]")).getText();
+//	String arr1[]= month1year1.split(" ");
+//	String mon1 = arr1[0];
+//	String yr1 = arr1[1];
+//	
+//	if(mon1.equalsIgnoreCase(month1) && yr1.equals(year1))
+//			break;
+//	else
+//		driver.findElement(By.xpath("//button[@title='Previous month']")).click();}  //for previous month
+//List<WebElement> alldates1 = driver.findElements(By.xpath("//button[@role='gridcell']"));		//Date selection
+//
+//for (WebElement ele1 : alldates1) {
+//	String dt1 = ele1.getText();
+//
+//	if (dt1.equals(date1)) {
+//		ele1.click();
+//		break;
+//	}
+//}
+//
+//
+//}
+//		
 	
-	if(mon1.equalsIgnoreCase(month1) && yr1.equals(year1))
-			break;
-	else
-		driver.findElement(By.xpath("//button[@title='Previous month']")).click();}  //for previous month
-List<WebElement> alldates1 = driver.findElements(By.xpath("//button[@role='gridcell']"));		//Date selection
-
-for (WebElement ele1 : alldates1) {
-	String dt1 = ele1.getText();
-
-	if (dt1.equals(date1)) {
-		ele1.click();
-		break;
-	}
-}
-	
-	
-}
-		
-		
+			
 		
 		
 		
